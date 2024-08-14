@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon Link -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Document Title -->
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="thankyouMessage" id="thankYou">
+      <div class="message_success">
+        <img
+          class="logo"
+          src="./assets//images/icon-success-check.svg"
+          alt="checkmark icon"
+        />
+        <p class="sent_message">Message Sent!</p>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <form id="contactForm" class="row g-3 m-4">
+      <h2 class="form-title">Contact Us</h2>
+
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">First Name*</label>
+        <input type="text" class="form-control" id="firstName" required />
+        <p class="invalid-feedback">This field is required</p>
+      </div>
+
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">Last Name*</label>
+        <input type="text" class="form-control" id="lastName" required />
+        <p class="invalid-feedback">This field is required</p>
+      </div>
+
+      <div class="col-md-6 w-100">
+        <label for="emailAddress" class="form-label">Email*</label>
+        <input type="email" class="form-control" id="emailAddress" required />
+        <p class="invalid-feedback">Please enter a valid email address</p>
+      </div>
+
+      <label for="gridRadios">Query Type*</label>
+
+      <div class="query_types_container d-flex">
+        <div class="form-check radio-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gridRadios"
+            id="gridRadios1"
+            value="option1"
+            required
+          />
+
+          <label class="form-check-label" for="gridRadios1"
+            >General Enquiry
+          </label>
+        </div>
+
+        <div class="form-check radio-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gridRadios"
+            id="gridRadios2"
+            value="option2"
+            required
+          />
+          <label class="form-check-label" for="gridRadios2">
+            Support Request
+          </label>
+        </div>
+      </div>
+      <p id="queryType" class="invalid-feedback">Please select a query type</p>
+
+      <div class="message_area">
+        <label for="textarea">Message*</label>
+        <textarea
+          class="form-control"
+          id="validationTextarea"
+          required
+        ></textarea>
+
+        <p class="error invalid-feedback">This field is required</p>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="gridCheck1"
+          required
+        />
+
+        <label id="checkMark" class="form-check-label" for="gridCheck1">
+          I consent to being contacted by the team*
+        </label>
+
+        <p class="invalid-feedback">
+          To submit this form, please consent to being contacted
+        </p>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" id="submitBtn">
+          Sumbit
+        </button>
+      </div>
+    </form>
+
+    <!-- Bootstrap JS Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+  </body>
+</html>
